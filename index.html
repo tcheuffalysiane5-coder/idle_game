@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ninja Idle Clicker - RPG Moderne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <header id="gameHeader">
+      <div class="ninja-icon"></div>
+      <h1>NINJA IDLE CLICKER</h1>
+      <div class="stats-indicators">
+        <span class="rank-stat">
+          <strong id="currentLevelName">Aucun</strong>
+        </span>
+        <span class="chakra-stat">
+          <strong id="chakraVal">0</strong> Rio
+        </span>
+        <span class="purchases-stat">
+          <strong id="stockAchat">0</strong> Achats
+        </span>
+      </div>
+    </header>
+
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+
+    <div id="mainContent">
+      <section id="leftPanel">
+        <div id="characterDisplay">
+          <img id="characterImg" src="Sanstitre.jpeg" alt="Ninja">
+        </div>
+        <div class="buttons-row">
+          <button class="control-btn" id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <section id="centerPanel">
+        <div id="chakraInfo">
+          <strong>Par Clic : <span id="perClick">+1</span> Rio</strong>
+          <div class="click-rate">
+            ⚡ CPS: <span id="cpsDisplay">0</span>
+          </div>
+        </div>
+        <button id="clickBtn">CLIQUE!</button>
+      </section>
+
+      <section id="shopPanel">
+        <h2 class="shop-title"> Boutique Ninja</h2>
+        <div id="nextLevelInfo">Prochain niveau</div>
+        <ul id="shopList"></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
